@@ -1,0 +1,39 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://localhost/authazws/risk" targetNamespace="http://localhost/authazws/risk"
+	elementFormDefault="qualified">
+
+	<xs:element name="EvaluateRiskResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="riskAssessment">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:string" name="advice" />
+							<xs:element type="xs:string" name="outputDeviceID" />
+							<xs:element type="xs:byte" name="score" />
+							<xs:element type="xs:string" name="matchedRuleMnemonic" />
+							<xs:element type="xs:string" name="ruleAnnotation" />
+							<xs:element type="xs:string" name="transactionID" />
+							<xs:element name="userContext">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type="xs:string" name="orgName" />
+										<xs:element type="xs:string" name="userName" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="riskFortSuccess">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:string" name="successMessage" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

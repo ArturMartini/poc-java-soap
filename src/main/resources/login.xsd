@@ -1,0 +1,16 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://localhost/authazws/auth" targetNamespace="http://localhost/authazws/auth"
+	elementFormDefault="qualified">
+
+	<xs:element name="return">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element type="xs:string" name="message" />
+				<xs:element type="xs:string" name="resultCode" />
+				<xs:element type="xs:string" name="sessionToken" />
+				<xs:element type="xs:string" name="authorizationResponses" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
