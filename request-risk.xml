@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+				  xmlns:aut="http://localhost/authazws/risk">
+   <soapenv:Header/>
+   <soapenv:Body>
+        <aut:risk>
+			
+		</aut:risk>
+   </soapenv:Body>
+</soapenv:Envelope>

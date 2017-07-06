@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+				  xmlns:aut="http://localhost/authazws/auth">
+   <soapenv:Header/>
+   <soapenv:Body>
+        <aut:login>
+            
+      </aut:login>
+   </soapenv:Body>
+</soapenv:Envelope>
